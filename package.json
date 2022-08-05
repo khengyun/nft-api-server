@@ -1,0 +1,21 @@
+{
+  "name": "nft-server-api",
+  "version": "1.0.0",
+  "description": "created by https://github.com/khengyun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "khenngyun",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.8.1",
+    "mongoose": "^6.5.1",
+    "node-fetch": "^3.2.6"
+  }
+}
