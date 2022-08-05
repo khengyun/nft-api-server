@@ -4,12 +4,12 @@ const Schema = mongoose.Schema;
 const AccountSchema = new Schema({
 username:{
   type: String,
-  required:false,
+  required:"username not empty",
   unique:true,
 },
  password: {
   type: String,
-  required: false
+  required: "password is empty"
  },
 fullname:{
   type:String,
@@ -17,14 +17,14 @@ fullname:{
 },
 address:{
   type:String,
-  required:true
+  required:false
 },
 phone:{
   type: String,
-  required:true
+  required:false
 },
 role:{
-  type:number,
+  type:Number,
   default: 0
   // default: 0 (member)
   // default: 1 (admin)

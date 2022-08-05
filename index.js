@@ -3,8 +3,13 @@ const express = require('express');
 const app = express(); 
 const mongoose = require("mongoose")
 const cors = require("cors")
+const port = 8080; 
+const bodyparser = require("body-parser")
+app.use(bodyparser.json())
 
-const url = "mongodb+srv://khaangnguyeen:khang1142003@cluster0.dm9tbco.mongodb.net/?retryWrites=true&w=majority";
+const AuthenticatorRouter = require("./Router/account")
+
+const url = "mongodb+srv://khaangnguyeen:"+mySecret+"@cluster0.dm9tbco.mongodb.net/?retryWrites=true&w=majority";
 
 const connectDB = async () => {
     try {
@@ -17,15 +22,17 @@ const connectDB = async () => {
 };
 connectDB();//run connectdb function
 
-const port = 8080; 
+
 
 app.get('/', function(req, res){
-    res.send("Hello World");
+    res.send("Server NFT Market ON");
 })
 
 app.listen(port, function(){
     console.log("Your app running on port " + port);
 })
+
+app.use("/api/auth", AuthenticatorRouter)
 
 
 
