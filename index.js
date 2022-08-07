@@ -25,7 +25,7 @@ connectDB();//run connectdb function
 
 
 app.get('/', function(req, res){
-    res.send("Server NFT Market ON");
+    res.send("Server NFT Market <p style='color:green'> ON </p> <br> You are connecting to the database server</br>");
 })
 
 app.listen(port, function(){
