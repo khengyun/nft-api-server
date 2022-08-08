@@ -4,12 +4,14 @@ const bcrypt = require('bcrypt');
 const { request } = require("http");
 const https = request
 const jwt = require("jsonwebtoken");
-const saltRounds = 10
+const saltRounds = process.env['saltRounds']
+
 const Account = require("../Schema/Account")
 
 // register request 
 router.post("/register", async (req, res) => {
-    const { email, username, password } = req.body
+    const { email, username, password ,fullname,
+          address,phone,avatar} = req.body
 
     if (!email || !username || !password) {
         return res.status(200).json({ success: false, message: "Missing email or username or password" })
