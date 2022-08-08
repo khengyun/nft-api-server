@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+.click-here-b,
+.server-nft-market-on {
+  position: absolute;
+  display: inline-block;
+}
+.server-nft-market-on {
+  top: 121px;
+  left: 375px;
+  font-weight: 500;
+}
+.click-here-b {
+  top: 5px;
+  left: 56px;
+  font-size: 18px;
+  font-family: Space Grotesk;
+  color: #fff;
+  text-align: left;
+  width: 116px;
+  height: 34px;
+}
+.frame-button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 176px;
+  left: 358px;
+  border-radius: 5px;
+  background: linear-gradient(
+    85.76deg,
+    rgba(191, 196, 238, 0.09) 15.52%,
+    #c367e6 58.75%,
+    rgba(190, 206, 239, 0)
+  );
+  box-sizing: border-box;
+  width: 188px;
+  height: 39px;
+  overflow: hidden;
+}
+.openculture-div,
+.to-see-source-code-on-the-api {
+  position: absolute;
+  font-weight: 500;
+  display: inline-block;
+}
+.openculture-div {
+  top: 46px;
+  left: 331px;
+  font-size: 40px;
+  color: #c267e4;
+  width: 278px;
+  height: 53px;
+}
+.to-see-source-code-on-the-api {
+  top: 237px;
+  left: 321px;
+}
+.frame-div {
+  position: relative;
+  background-color: #1e2b4b;
+  width: 904px;
+  height: 261px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: 15px;
+  color: #fff;
+  font-family: Space Grotesk;
+}

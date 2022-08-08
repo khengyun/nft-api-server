@@ -5,6 +5,8 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const port = 8080; 
 const bodyparser = require("body-parser")
+const path = require('path');
+
 app.use(bodyparser.json())
 
 const AuthenticatorRouter = require("./Router/account")
@@ -25,7 +27,8 @@ connectDB();//run connectdb function
 
 
 app.get('/', function(req, res){
-    res.send("Server NFT Market <p style='color:green'> ON </p> <br> You are connecting to the database server</br><a href='https://github.com/khengyun/nft-api-server' target='_blank'> click here</a> to see source on the api server  ");
+    res.sendFile(path.join(__dirname, "/index.html"))
+ 
 })
 
 app.listen(port, function(){
